@@ -1,0 +1,15 @@
+{
+  "name": "vitepress-theme-book",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "clark-cui <cuirongchuan@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^0.11.5"
+  }
+}
