@@ -1,8 +1,11 @@
 <template>
   <div class="theme-container">
-    <Header></Header>
-    <Sidebar></Sidebar>
-    <Page></Page>
+    <section>
+      <Header></Header>
+      <Sidebar></Sidebar>
+      <Page></Page>
+    </section>
+
     <Footer></Footer>
   </div>
 </template>
@@ -33,6 +36,13 @@ export default {
 </script>
 
 <style>
+.theme-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* relative rem */
 html {
   font-size: 10px; /*默认以设计稿为基准,将设计稿除100*/
