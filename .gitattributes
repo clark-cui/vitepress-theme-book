@@ -1,3 +1,3 @@
 *.ts linguist-language=TypeScript
-*.vue linguist-language=vue
+*.vue linguist-language=Vue
 

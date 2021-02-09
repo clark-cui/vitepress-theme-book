@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.sideButton {
+  width: 1rem;
+  height: 1rem;
+}
+.siteTitle {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
