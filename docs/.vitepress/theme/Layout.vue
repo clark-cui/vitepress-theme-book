@@ -11,6 +11,7 @@ import Darkmode from "darkmode-js";
 
 export default {
   setup(props, context) {
+    // dark-mode
     const options = {
       bottom: "64px", // default: '32px'
       right: "unset", // default: '32px'
@@ -32,4 +33,30 @@ export default {
 </script>
 
 <style>
+/* relative rem */
+html {
+  font-size: 10px; /*默认以设计稿为基准,将设计稿除100*/
+}
+
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 1366px) {
+  html {
+    font-size: 13.6px;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1367px) {
+  html {
+    font-size: 15px;
+  }
+  .sidebar {
+    display: none;
+  }
+}
 </style>

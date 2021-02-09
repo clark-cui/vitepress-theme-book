@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Hello VitePress",
+  title: "clark-cui",
   description: "Just playing around.",
   markdown: {
     lineNumbers: true,
@@ -13,7 +13,7 @@ module.exports = {
       "meta",
       {
         name: "viewport",
-        content: "width=device-width,initial-scale=1,user-scalable=no",
+        content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
       },
     ],
   ],
@@ -22,10 +22,7 @@ module.exports = {
         text: "Home",
         link: "/"
       },
-      {
-        text: "TimeLine",
-        link: "/timeline/"
-      },
+
       {
         text: "frontEnd",
         link: "/frontEnd/"
@@ -35,11 +32,13 @@ module.exports = {
         link: "/backEnd/"
       },
     ],
-    sidebar: {
-      "/backEnd/": ["backEndT"],
-      "/frontEnd/": [{
-        title: "frontEndT",
-      }, ],
+
+    blogConfig: {
+     
+      socialLinks: [
+        { link: 'https://github.com/clark-cui' },
+      ]
     },
+
   },
 };
