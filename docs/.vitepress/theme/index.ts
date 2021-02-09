@@ -4,11 +4,11 @@ import Header from "./components/Header.vue";
 import Sidebar from "./components/Sidebar.vue";
 import Page from "./components/Page.vue";
 import Footer from "./components/Footer.vue";
-
+import DefaultTheme from "vitepress/theme";
 export default {
-  Layout,
-  NotFound,
-
+  // Layout,
+  // NotFound,
+  ...DefaultTheme,
   enhanceApp({ app, router, siteData }) {
     // 注册组件
     app.component("Header", Header);
