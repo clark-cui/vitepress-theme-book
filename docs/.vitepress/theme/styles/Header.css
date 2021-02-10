@@ -14,6 +14,10 @@
 .navContent {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+.navItem:hover {
+  color: #3eaf7c;
 }
 .navItem {
   margin-left: 1rem;
@@ -28,6 +32,10 @@
 .siteTitle {
   margin-left: 1rem;
   font-size: 2rem;
+  cursor: pointer;
+}
+.siteTitle:hover {
+  color: #3eaf7c;
 }
 
 .tabSearch input {
@@ -38,6 +46,10 @@
   margin-left: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
+  cursor: pointer;
+}
+.tabGithub:hover {
+  color: #3eaf7c;
 }
 @media only screen and (max-width: 720px) {
   .sideButton {

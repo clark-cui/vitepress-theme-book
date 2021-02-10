@@ -45,9 +45,15 @@ export default {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  cursor: pointer;
+
 }
 .footerItem {
   margin-left: 1rem;
   margin-top: 1rem;
+}
+.footerItem:hover{
+  color: #3eaf7c;
+
 }
 </style>

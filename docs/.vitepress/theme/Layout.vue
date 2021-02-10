@@ -2,9 +2,7 @@
   <div class="theme-container">
     <Header></Header>
     <Sidebar></Sidebar>
-
     <Page></Page>
-
     <Footer></Footer>
   </div>
 </template>
