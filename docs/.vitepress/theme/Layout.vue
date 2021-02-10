@@ -1,10 +1,10 @@
 <template>
   <div class="theme-container">
-    <section>
+    <section class="section">
       <Header></Header>
       <Sidebar></Sidebar>
-      <Page></Page>
     </section>
+    <Page></Page>
 
     <Footer></Footer>
   </div>
@@ -41,6 +41,30 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.section {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 0.1rem solid black;
+  background-color: white;
+  z-index: 2;
+}
+.page {
+  padding-top: 3rem;
+  overflow: scroll;
+}
+.footer {
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.darkmode-layer,
+.darkmode-toggle {
+  z-index: 3;
 }
 
 /* relative rem */
