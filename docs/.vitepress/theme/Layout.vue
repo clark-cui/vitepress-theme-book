@@ -1,9 +1,8 @@
 <template>
   <div class="theme-container">
-    <section class="section">
-      <Header></Header>
-      <Sidebar></Sidebar>
-    </section>
+    <Header></Header>
+    <Sidebar></Sidebar>
+
     <Page></Page>
 
     <Footer></Footer>
@@ -37,14 +36,13 @@ export default {
 
 <style>
 .theme-container {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
 }
 
-.section {
+.navbar {
   width: 100%;
   position: fixed;
   top: 0;
@@ -53,11 +51,10 @@ export default {
   z-index: 2;
 }
 .page {
-  padding-top: 3rem;
-  overflow: scroll;
+  padding: 3rem 1.5rem 3.5rem 1.5rem;
 }
 .footer {
-  margin-top: 2rem;
+  margin-top: 3rem;
   position: absolute;
   bottom: 0;
   width: 100%;
