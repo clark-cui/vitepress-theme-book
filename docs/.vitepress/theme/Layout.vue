@@ -1,7 +1,15 @@
 <template>
   <div class="theme-container">
     <Header></Header>
-    <Sidebar></Sidebar>
+    <!-- <Sidebar></Sidebar> -->
+    <SideBar :open="true">
+      <template #sidebar-top>
+        <slot name="sidebar-top" />
+      </template>
+      <template #sidebar-bottom>
+        <slot name="sidebar-bottom" />
+      </template>
+    </SideBar>
     <Page></Page>
     <Footer></Footer>
   </div>

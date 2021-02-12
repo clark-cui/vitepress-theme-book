@@ -1,4 +1,3 @@
- 
 <template>
   <div class="navbar">
     <div class="navLeft">
@@ -53,7 +52,7 @@ export default {
 
     const navList = globalProperties.$site.themeConfig.nav;
     const goNav = (item) => {
-      location.href = item.link;
+      location.href = `${item.link}.html`;
     };
     const goGithub = () => {
       location.href =
@@ -67,7 +66,7 @@ export default {
     };
   },
 };
-</script >
+</script>
 
 <style lang="css" scoped>
 @import url("../styles/Header.css");
